@@ -134,20 +134,25 @@
 
 .honeycomb-row {
   display: flex;
+  /* justify-content: flex-start; */
   justify-content: center;
-  margin-bottom: -60px; /* Reduced from -69px to add small padding between rows */
+  gap: 120px;
+  margin-bottom: -69px; /* Reduced from -69px to add small padding between rows */
 }
 
 /* Every second row moved left by another 25% of hexagon size (total 75% from original) */
+.honeycomb-row:nth-child(odd) {
+  margin-left: 0px; /* Offset by 75% of new hexagon width */
+}
 .honeycomb-row:nth-child(even) {
-  margin-left: 0px; /* Reduced from 40px by another 40px (now 75% total shift from original 120px) */
+  margin-left: -150px;
 }
 
 /* Larger Hexagon Wrapper with more spacing */
 .hexagon-wrapper {
   width: 160px; /* Increased from 120px */
   height: 138px; /* Increased proportionally */
-  margin: 0 15px; /* Increased horizontal spacing */
+  margin: 0 -15px; /* Increased horizontal spacing */
   position: relative;
 }
 
@@ -173,7 +178,7 @@
   }
 
   .honeycomb-row {
-    margin-bottom: -48px; /* Reduced from -56px */
+    margin-bottom: -48px; /* Reduced from -56px , */
   }
 
   .honeycomb-row:nth-child(even) {

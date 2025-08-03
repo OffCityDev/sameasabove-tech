@@ -1,20 +1,30 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Palette, Code, Music, Camera, Gamepad2, Zap, Globe, Database, Shield, Cpu, Wifi, Settings } from "lucide-react"
+import { Palette, Code, Music, Camera, Gamepad2, Zap, Globe, Database, Shield, Cpu, Wifi, Settings, Snowflake } from "lucide-react"
+import { Building2 } from "lucide-react"
 
 const apps = [
-  { id: 1, name: "Art Hub", icon: Palette, href: "/art-hub" },
+  { id: 1, name: "Off City", icon: Building2, href: "/off-city" },
   { id: 2, name: "Code Lab", icon: Code, href: "#" },
-  { id: 3, name: "Music Studio", icon: Music, href: "#" },
-  { id: 4, name: "Photo Gallery", icon: Camera, href: "#" },
-  { id: 5, name: "Game Center", icon: Gamepad2, href: "#" },
-  { id: 6, name: "Energy Core", icon: Zap, href: "#" },
-  { id: 7, name: "Web Portal", icon: Globe, href: "#" },
-  { id: 8, name: "Database", icon: Database, href: "#" },
-  { id: 9, name: "Security", icon: Shield, href: "#" },
-  { id: 10, name: "AI Core", icon: Cpu, href: "#" },
+  { id: 3, name: "OffCityDev: Github", icon: Code, href: "https://github.com/OffCityDev" },
+  { id: 4, name: "Website Stuff", icon: Cpu, href: "#" },
+  { id: 5, name: "sameasabove.co", icon: Snowflake, href: "https://sameasabove.bigcartel.com/products" },
+  { id: 6, name: "Example App 1", icon: Zap, href: "#" },
+  { id: 7, name: "Example App 2", icon: Zap, href: "#" },
+  { id: 8, name: "addiciting casino game", icon: Gamepad2, href: "#" },
+  { id: 9, name: "Sweet Nothings", icon: Music, href: "https://music.youtube.com/playlist?list=OLAK5uy_lVyJ7r_vRbmm1HJrOBbPK5tsIuRI1huEE&si=HFz_DGgarcezS4cz" },
+  { id: 10, name: "Website Chatbot", icon: Cpu, href: "#" },
   { id: 11, name: "Network", icon: Wifi, href: "#" },
-  { id: 12, name: "Settings", icon: Settings, href: "#" },
+  { id: 12, name: "hippie witadrum", icon: Shield, href: "#" },
+  { id: 13, name: "AAA", icon: Settings, href: "#" },
+  { id: 14, name: "Example App 3", icon: Building2, href: "#" },
+  { id: 15, name: "Example", icon: Building2, href: "#" },
+  { id: 16, name: "Example App 4", icon: Building2, href: "#" },
+  { id: 17, name: "Example App 5", icon: Building2, href: "#" },
+  { id: 18, name: "Settings", icon: Settings, href: "#" },
+  { id: 19, name: "Example", icon: Building2, href: "#" },
+  { id: 20, name: "Example App 7", icon: Settings, href: "#" },
+  { id: 21, name: "Example App 8", icon: Building2, href: "#" },
 ]
 
 // Arrange apps in honeycomb rows
@@ -22,7 +32,9 @@ const honeycombRows = [
   apps.slice(0, 4), // First row: 4 hexagons
   apps.slice(4, 7), // Second row: 3 hexagons (offset)
   apps.slice(7, 11), // Third row: 4 hexagons
-  apps.slice(11, 12), // Fourth row: 1 hexagon (offset)
+  // apps.slice(11, 14), // Fourth row: 4 hexagons (offset)
+  // apps.slice(14, 18), // Fifth row: 4 hexagons (offset)
+  // apps.slice(18, 21), // Sixth row: 3 hexagons (offset)
 ]
 
 export default function HomePage() {
@@ -152,10 +164,9 @@ export default function HomePage() {
           </div>
 
           {/* Enhanced subtitle with better contrast */}
-          <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto leading-relaxed font-medium animate-fade-in-up subtitle-shadow">
-            <span className="text-cyan-300 font-bold text-shadow-sm">Welcome to the future.</span> Navigate through your
-            digital ecosystem with
-            <span className="text-blue-200 font-semibold animate-pulse text-shadow-sm"> cutting-edge innovation</span>.
+          <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto leading-relaxed font-medium animate-fade-in-up subtitle-shadow mb-12">
+            <span className="text-cyan-300 font-bold text-shadow-sm">Where code meets poetry.</span>
+            <span className="text-blue-200 font-semibold animate-pulse text-shadow-sm"> Explore the living archive</span>.
           </p>
 
         {/* True Honeycomb Grid */}
@@ -183,12 +194,12 @@ export default function HomePage() {
         </div>
 
           {/* Enhanced decorative elements */}
-          <div className="mt-8 flex justify-center items-center space-x-4">
+          <div className="mt-32 flex justify-center items-center space-x-4">
             <div className="h-px w-16 bg-gradient-to-r from-transparent via-blue-300 to-cyan-300 animate-pulse" />
             <div className="w-3 h-3 bg-cyan-300 rounded-full animate-ping shadow-lg shadow-cyan-300/50" />
             <div className="relative">
               <Image
-                src="/images/SAA-White.png"
+                src="/images/3_vertical_white__sameasabove.png"
                 alt="SAAT Lego"
                 width={150}
                 height={150}
