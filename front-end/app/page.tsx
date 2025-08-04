@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Palette, Code, Music, Camera, Gamepad2, Zap, Globe, Database, Shield, Cpu, Wifi, Settings, Snowflake } from "lucide-react"
+import { Palette, Code, Music, Gamepad2, Zap, Cpu, Wifi, Settings, Snowflake } from "lucide-react"
 import { Building2 } from "lucide-react"
 
 const apps = [
