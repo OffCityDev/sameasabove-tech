@@ -7,32 +7,32 @@ const apps = [
   { id: 1, name: "Off City", icon: Building2, href: "/off-city" },
   { id: 2, name: "Code Lab", icon: Code, href: "#" },
   { id: 3, name: "OffCityDev: Github", icon: Code, href: "https://github.com/OffCityDev" },
-  { id: 4, name: "Website Stuff", icon: Cpu, href: "#" },
+  { id: 4, name: "Website Settings", icon: Cpu, href: "#" },
   { id: 5, name: "sameasabove.co", icon: Snowflake, href: "https://sameasabove.bigcartel.com/products" },
-  { id: 6, name: "Example App 1", icon: Zap, href: "#" },
-  { id: 7, name: "Example App 2", icon: Zap, href: "#" },
+  { id: 6, name: "ExampleApp1", icon: Zap, href: "#" },
+  { id: 7, name: "ExampleApp2", icon: Zap, href: "#" },
   { id: 8, name: "addiciting casino game", icon: Gamepad2, href: "#" },
   { id: 9, name: "Sweet Nothings", icon: Music, href: "https://music.youtube.com/playlist?list=OLAK5uy_lVyJ7r_vRbmm1HJrOBbPK5tsIuRI1huEE&si=HFz_DGgarcezS4cz" },
   { id: 10, name: "Website Chatbot", icon: Cpu, href: "#" },
   { id: 11, name: "Network", icon: Wifi, href: "#" },
-  { id: 12, name: "hippie witadrum", icon: Shield, href: "#" },
-  { id: 13, name: "AAA", icon: Settings, href: "#" },
-  { id: 14, name: "Example App 3", icon: Building2, href: "#" },
-  { id: 15, name: "Example", icon: Building2, href: "#" },
-  { id: 16, name: "Example App 4", icon: Building2, href: "#" },
-  { id: 17, name: "Example App 5", icon: Building2, href: "#" },
+  { id: 12, name: "Sweet Nothings", icon: Music, href: "#" },
+  { id: 13, name: "ExampleApp1", icon: Zap, href: "#" },
+  { id: 14, name: "ExampleApp2", icon: Building2, href: "#" },
+  { id: 15, name: "ExampleApp3", icon: Building2, href: "#" },
+  { id: 16, name: "ExampleApp5", icon: Building2, href: "#" },
+  { id: 17, name: "ExampleApp8", icon: Building2, href: "#" },
   { id: 18, name: "Settings", icon: Settings, href: "#" },
-  { id: 19, name: "Example", icon: Building2, href: "#" },
-  { id: 20, name: "Example App 7", icon: Settings, href: "#" },
-  { id: 21, name: "Example App 8", icon: Building2, href: "#" },
+  { id: 19, name: "ExampleApp13", icon: Building2, href: "#" },
+  { id: 20, name: "ExampleApp21", icon: Settings, href: "#" },
+  { id: 21, name: "ExampleApp34", icon: Building2, href: "#" },
 ]
 
-// Arrange apps in honeycomb rows
+// Arrange apps in honeycomb rows, uncomment the next lines to use all apps
 const honeycombRows = [
   apps.slice(0, 4), // First row: 4 hexagons
   apps.slice(4, 7), // Second row: 3 hexagons (offset)
   apps.slice(7, 11), // Third row: 4 hexagons
-  // apps.slice(11, 14), // Fourth row: 4 hexagons (offset)
+  apps.slice(11, 14), // Fourth row: 4 hexagons (offset)
   // apps.slice(14, 18), // Fifth row: 4 hexagons (offset)
   // apps.slice(18, 21), // Sixth row: 3 hexagons (offset)
 ]

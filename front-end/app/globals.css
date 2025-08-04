@@ -148,11 +148,11 @@
   margin-left: -150px;
 }
 
-/* Larger Hexagon Wrapper with more spacing */
+/* Hexagon size and spacing */
 .hexagon-wrapper {
-  width: 160px; /* Increased from 120px */
-  height: 138px; /* Increased proportionally */
-  margin: 0 -15px; /* Increased horizontal spacing */
+  width: 200px; /* Increased from 160px */
+  height: 173px; /* Increased proportionally from 138px */
+  margin: -9 -15px; /* Increased horizontal spacing */
   position: relative;
 }
 

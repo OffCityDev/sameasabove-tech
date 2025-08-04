@@ -2,64 +2,87 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, ExternalLink, Calendar, Eye } from "lucide-react"
 
-const artProjects = [
-  {
-    id: 1,
-    title: "Digital Shadows",
-    description:
-      "An exploration of light and darkness in the digital realm. This piece examines how shadows can exist in virtual spaces, creating depth and emotion through the absence of light. The interplay between illuminated pixels and void spaces tells a story of modern isolation.",
-    image: "/placeholder.svg?height=400&width=600&text=Digital+Shadows",
-    date: "2024",
-    views: "1.2k",
-  },
-  {
-    id: 2,
-    title: "Fractured Reality",
-    description:
-      "A haunting representation of broken dreams and shattered expectations. Using fragmented geometric forms to convey the complexity of human emotion in a disconnected world. Each fragment represents a memory, a hope, or a fear that has been displaced by digital transformation.",
-    image: "/placeholder.svg?height=400&width=600&text=Fractured+Reality",
-    date: "2024",
-    views: "856",
-  },
-  {
-    id: 3,
-    title: "Void Whispers",
-    description:
-      "Minimalist composition exploring the beauty found in emptiness. The piece invites viewers to find meaning in the spaces between, where silence speaks louder than noise. In our hyperconnected world, this work celebrates the power of digital minimalism and intentional absence.",
-    image: "/placeholder.svg?height=400&width=600&text=Void+Whispers",
-    date: "2024",
-    views: "2.1k",
-  },
-  {
-    id: 4,
-    title: "Midnight Frequencies",
-    description:
-      "A visual interpretation of sound waves traveling through the darkness. This piece captures the invisible energy that surrounds us, made visible through careful manipulation of form and shadow. The work explores how digital signals create their own form of music in the electromagnetic spectrum.",
-    image: "/placeholder.svg?height=400&width=600&text=Midnight+Frequencies",
-    date: "2023",
-    views: "743",
-  },
-  {
-    id: 5,
-    title: "Forgotten Algorithms",
-    description:
-      "A commentary on obsolete code and abandoned digital projects. This artwork represents the digital graveyard where forgotten algorithms rest, their purpose lost to time. Each line and curve symbolizes the countless hours of human creativity that have been rendered obsolete by technological progress.",
-    image: "/placeholder.svg?height=400&width=600&text=Forgotten+Algorithms",
-    date: "2023",
-    views: "1.5k",
-  },
-  {
-    id: 6,
-    title: "Neural Pathways",
-    description:
-      "An abstract visualization of artificial intelligence learning patterns. This piece explores the hidden beauty within machine learning processes, where data flows like synapses in a digital brain. The organic curves contrast with the rigid logic of computational thinking.",
-    image: "/placeholder.svg?height=400&width=600&text=Neural+Pathways",
-    date: "2023",
-    views: "967",
-  },
+const Projects = [
+  {   id: 1,
+      title: "photo vortex component",
+      description:
+        "TBD",
+      image: "/placeholder.svg?height=400&width=600&text=Digital+Shadows",
+      date: "TBD 2025",
+      views: "0",
+    },
+    { id: 2,
+      title: "data aesthetics",
+      description:
+        "TBD",
+      image: "/placeholder.svg?height=400&width=600&text=Digital+Shadows",
+      date: "TBD 2025",
+      views: "0",
+    },
+    { id: 3,
+      title: "code behind the portrait",
+      description:
+        "TBD",
+      image: "/placeholder.svg?height=400&width=600&text=Digital+Shadows",
+      date: "TBD 2025",
+      views: "0",
+    },
+    // id: 1,
+    // title: "Digital Shadows",
+    // description:
+    //   "An exploration of light and darkness in the digital realm. This piece examines how shadows can exist in virtual spaces, creating depth and emotion through the absence of light. The interplay between illuminated pixels and void spaces tells a story of modern isolation.",
+    // image: "/placeholder.svg?height=400&width=600&text=Digital+Shadows",
+    // date: "2024",
+    // views: "1.2k",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Fractured Reality",
+  //   description:
+  //     "A haunting representation of broken dreams and shattered expectations. Using fragmented geometric forms to convey the complexity of human emotion in a disconnected world. Each fragment represents a memory, a hope, or a fear that has been displaced by digital transformation.",
+  //   image: "/placeholder.svg?height=400&width=600&text=Fractured+Reality",
+  //   date: "2024",
+  //   views: "856",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Void Whispers",
+  //   description:
+  //     "Minimalist composition exploring the beauty found in emptiness. The piece invites viewers to find meaning in the spaces between, where silence speaks louder than noise. In our hyperconnected world, this work celebrates the power of digital minimalism and intentional absence.",
+  //   image: "/placeholder.svg?height=400&width=600&text=Void+Whispers",
+  //   date: "2024",
+  //   views: "2.1k",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Midnight Frequencies",
+  //   description:
+  //     "A visual interpretation of sound waves traveling through the darkness. This piece captures the invisible energy that surrounds us, made visible through careful manipulation of form and shadow. The work explores how digital signals create their own form of music in the electromagnetic spectrum.",
+  //   image: "/placeholder.svg?height=400&width=600&text=Midnight+Frequencies",
+  //   date: "2023",
+  //   views: "743",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Forgotten Algorithms",
+  //   description:
+  //     "A commentary on obsolete code and abandoned digital projects. This artwork represents the digital graveyard where forgotten algorithms rest, their purpose lost to time. Each line and curve symbolizes the countless hours of human creativity that have been rendered obsolete by technological progress.",
+  //   image: "/placeholder.svg?height=400&width=600&text=Forgotten+Algorithms",
+  //   date: "2023",
+  //   views: "1.5k",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Neural Pathways",
+  //   description:
+  //     "An abstract visualization of artificial intelligence learning patterns. This piece explores the hidden beauty within machine learning processes, where data flows like synapses in a digital brain. The organic curves contrast with the rigid logic of computational thinking.",
+  //   image: "/placeholder.svg?height=400&width=600&text=Neural+Pathways",
+  //   date: "2023",
+  //   views: "967",
+  // },
 ]
 
-export default function ArtHubPage() {
+export default function OffCityPage() {
   return (
     <div className="min-h-screen bg-black text-gray-300">
       {/* Header */}
@@ -71,9 +94,9 @@ export default function ArtHubPage() {
               className="flex items-center space-x-3 text-gray-400 hover:text-white transition-all duration-200 group"
             >
               <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-200" />
-              <span className="font-medium">Back to Nexus Hub</span>
+              <span className="font-medium">Back to SAMEASABOVE Technologies</span>
             </Link>
-            <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight">Art Hub</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight">Off City</h1>
             <div className="w-32" />
           </div>
         </div>
@@ -94,7 +117,7 @@ export default function ArtHubPage() {
 
         {/* Art Projects Grid */}
         <div className="space-y-20">
-          {artProjects.map((project, index) => (
+          {Projects.map((project, index) => (
             <article
               key={project.id}
               className={`flex flex-col ${
@@ -164,9 +187,9 @@ export default function ArtHubPage() {
         {/* Footer */}
         <div className="mt-24 pt-12 border-t border-gray-800 text-center">
           <p className="text-gray-500 text-sm mb-4">
-            All artworks are original digital creations exploring the intersection of technology and human emotion
+            All artworks are original digital creations exploring the intersection of technology and human emotion.
           </p>
-          <p className="text-gray-600 text-xs">© 2024 Art Hub • Created with passion in the digital realm</p>
+          <p className="text-gray-600 text-xs">© 2025 Off City • So it goes.</p>
         </div>
       </div>
     </div>
