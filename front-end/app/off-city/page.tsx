@@ -187,9 +187,11 @@ export default function OffCityPage() {
         {/* Footer */}
         <div className="mt-24 pt-12 border-t border-gray-800 text-center">
           <p className="text-gray-500 text-sm mb-4">
-            All artworks are original digital creations exploring the intersection of technology and human emotion.
+            {/* All artworks are original digital creations exploring the intersection of technology and human emotion. */}
+            The arts are not a way to make a living. They are a very human way of making life more bearable.
+            
           </p>
-          <p className="text-gray-600 text-xs">© 2025 Off City • So it goes.</p>
+          <p className="text-gray-600 text-xs">© 2025 Off City • </p>
         </div>
       </div>
     </div>
