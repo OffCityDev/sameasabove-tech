@@ -236,7 +236,7 @@ export default function HomePage() {
           </div>
           {/* Quote at the bottom */}
           <div className="mt-8 mb-4">
-            <blockquote className="italic text-lg text-gray-400">"No one is above the program."</blockquote>
+            <blockquote className="italic text-lg text-gray-400">&quot;No one is above the program.&quot;</blockquote>
           </div>
         </div>
       </div>
